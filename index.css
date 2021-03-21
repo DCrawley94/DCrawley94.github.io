@@ -3,73 +3,91 @@
   padding: 0;
   border: 0;
 }
-
+/* page */
 body {
   background-color: #1f2833;
   color: #c5c6c7;
+  background-image: url('./images/background2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div#content {
+  background-image: url(my_image.png);
+  background-color: rgba(255, 255, 255, 0.15);
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
 }
 
-.navbar {
+/* NAV */
+.portfolio-nav {
   background-color: #0b0c10;
 }
 
 .nav-link {
-  margin-right: 1em;
   color: #c5c6c7;
+  font-size: x-large;
+  letter-spacing: 2pt;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .nav-link:hover {
   color: #ffffff;
 }
+/* LANDING PAGE */
 
-#description {
+.description {
+  background-color: #1f2833;
   text-align: center;
-  margin: 15% 15% 15% 15%;
+  margin: 7.5% 10% 20% 10%;
+  padding: 2.5%;
 }
 
-#description h1 {
+.description h1 {
   color: #66fcf1;
-  font-size: 15vw;
+  font-size: 13vw;
+  text-align: left;
 }
 
-#description h3 {
+.description h3 {
   color: #c5c6c7;
   font-size: 2vw;
   line-height: 1.5;
 }
-
+/* ABOUT SECTION */
 .about {
-  background-color: #0b0c10;
-  /* border-color: #45a29e;
-  border-style: solid;
-  border-width: medium; */
-  color: #c5c6c7;
-  margin: 20% 20% 20% 20%;
-  padding: 5% 5% 5% 5%;
-  border-radius: 5%;
+  background-color: #c5c6c7;
+  margin: 20% 10% 20% 10%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
 }
 
 .about h2 {
   font-size: 3vw;
   color: #45a29e;
   margin-bottom: 20px;
-  font-weight: bolder;
+  font-weight: 900;
+  padding: 2.5%;
 }
 
 .about p {
-  line-height: 2;
-  font-weight: bolder;
+  color: #0b0c10;
+  line-height: 1.75;
+  font-size: 15pt;
 }
 
 .projects {
-  background-color: #0b0c10;
-  /* border-color: #45a29e;
-  border-style: solid;
-  border-width: medium; */
-  color: #c5c6c7;
-  margin: 20% 20% 20% 20%;
-  padding: 2.5%;
-  border-radius: 5%;
+  background-color: #c5c6c7;
+  margin: 20% 10% 20% 10%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  align-items: center;
+}
+.projects-card {
+  background-color: #c5c6c7;
 }
 
 .projects h2 {
@@ -81,15 +99,169 @@ body {
 }
 
 #project-box {
-  background-color: #1f2833;
+  background-color: #0b0c10;
+  padding: 5%;
+  border-radius: 2.5%;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 15px;
-  border-radius: 15px;
 }
 
 #project-box h4 {
   color: #66fcf1;
   font-weight: bolder;
   text-align: center;
+}
+/* CONTACT */
+.contact {
+  margin: 20% 10% 0% 10%;
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+}
+
+.contact h2 {
+  font-size: 3vw;
+  color: #45a29e;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contact-card {
+  background-color: #c5c6c7;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+#contact-link {
+  padding: 5%;
+}
+
+#contact-details {
+  background-color: #0b0c10;
+  padding: 2%;
+  border-radius: 2.5%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#contact-details p {
+  font-size: larger;
+}
+
+@media only screen and (max-width: 768px) {
+  /* LANDING PAGE */
+  .description {
+    background-color: #1f2833;
+    text-align: center;
+    margin: 15% 1.5% 15% 1.5%;
+    padding: 2.5%;
+  }
+
+  .description h1 {
+    color: #66fcf1;
+    font-size: 75pt;
+    text-align: center;
+  }
+
+  .description h3 {
+    color: #c5c6c7;
+    font-size: 15pt;
+    line-height: 1;
+  }
+  /* ABOUT */
+  .about {
+    background-color: #c5c6c7;
+    margin: 15% 1.5% 15% 1.5%;
+    padding: 0.5%;
+  }
+
+  .about h2 {
+    color: #45a29e;
+    margin-bottom: 5px;
+    font-size: 50pt;
+    padding: 0.5%;
+  }
+
+  .about p {
+    color: #0b0c10;
+    line-height: 1.2;
+    font-size: 15pt;
+  }
+  /* PROJECTS */
+  .projects {
+    background-color: #c5c6c7;
+    margin: 15% 1.5% 15% 1.5%;
+    padding: 0.5%;
+  }
+  .projects-card {
+    color: #c5c6c7;
+    background-color: #c5c6c7;
+    padding: 1.5%;
+    border-radius: 0.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .projects h2 {
+    color: #45a29e;
+    margin-bottom: 5px;
+    font-size: 50pt;
+    padding: 0.5%;
+  }
+
+  #project-box {
+    background-color: #0b0c10;
+    padding: 5%;
+    border-radius: 2.5%;
+    margin: 5px;
+  }
+
+  #project-box h4 {
+    color: #66fcf1;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  #project-box p {
+    color: #c5c6c7;
+    line-height: 1.5;
+    font-size: 15pt;
+  }
+
+  /* CONTACT */
+  .contact {
+    background-color: #c5c6c7;
+    margin: 15% 1.5% 15% 1.5%;
+    padding: 0.5%;
+    align-items: center;
+  }
+
+  .contact h2 {
+    color: #45a29e;
+    margin-bottom: 5px;
+    font-size: 50pt;
+    padding: 0.5%;
+  }
+
+  .contact-card {
+    color: #c5c6c7;
+    background-color: #c5c6c7;
+    padding: 2.5%;
+    align-items: center;
+  }
+
+  #contact-link {
+    padding: 5%;
+  }
+
+  #contact-details {
+    background-color: #0b0c10;
+    padding: 2%;
+    border-radius: 2.5%;
+    margin: 5px;
+  }
+
+  #contact-details p {
+    font-size: 15pt;
+  }
 }
