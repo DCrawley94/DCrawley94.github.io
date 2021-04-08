@@ -98,7 +98,7 @@ div#content {
   text-align: center;
 }
 
-#project-box {
+.project-box {
   background-color: #0b0c10;
   padding: 5%;
   border-radius: 2.5%;
@@ -106,7 +106,7 @@ div#content {
   margin-right: 5px;
 }
 
-#project-box h4 {
+.project-box h4 {
   color: #66fcf1;
   font-weight: bolder;
   text-align: center;
@@ -209,20 +209,20 @@ div#content {
     padding: 0.5%;
   }
 
-  #project-box {
+  .project-box {
     background-color: #0b0c10;
     padding: 5%;
     border-radius: 2.5%;
     margin: 5px;
   }
 
-  #project-box h4 {
+  .project-box h4 {
     color: #66fcf1;
     font-weight: bolder;
     text-align: center;
   }
 
-  #project-box p {
+  .project-box p {
     color: #c5c6c7;
     line-height: 1.5;
     font-size: 15pt;
